@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -47,9 +46,9 @@ const mSabah = L.marker([7, 116]).bindPopup('Sabah Basin').addTo(projects);
 const mNWJava = L.marker([-6.26, 108.3]).bindPopup('Northwest Java Basin: Akasia Bagus').addTo(projects);
 const mSemai = L.marker([-3, 133]).bindPopup('Blok Semai II').addTo(projects);
 const mMasela = L.marker([-8, 130]).bindPopup('Blok Masela').addTo(projects);
-const mWiduri = L.marker([-5, 106]).bindPopup('Blok Masela').addTo(projects);
-const mBravo = L.marker([-6, 107.6]).bindPopup('Blok Masela').addTo(projects);
-const mWiduri = L.marker([-6.3, 108.6]).bindPopup('Blok Masela').addTo(projects);
+const mWiduri = L.marker([-5, 106]).bindPopup('Widuri field').addTo(projects);
+const mBravo = L.marker([-6, 107.6]).bindPopup('Bravo field').addTo(projects);
+const mWiduri = L.marker([-6.3, 108.6]).bindPopup('X-Ray field').addTo(projects);
 
 const tiles = L.tileLayer('https://basemap.nationalmap.gov/arcgis/rest/services/USGSImageryTopo/MapServer/tile/{z}/{y}/{x}', {
 	maxZoom: 8,
@@ -80,12 +79,9 @@ const Suban = L.marker([-3.7, 104]).bindPopup('Suban CBM');
 const geothermal = L.layerGroup([muaraLaboh, wayangWindu]);
 const cbm = L.layerGroup([Suban]);
 
-
 layerControl.addOverlay(geothermal, 'Geothermal');
 layerControl.addOverlay(cbm, 'Coalbed Methane');
 </script>
-
-
 
 </body>
 </html>
